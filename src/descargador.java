@@ -23,16 +23,16 @@ public class descargador extends Thread {
 
         while (true) {
 
-            int tiempo = (int) (Math.random()*10);
+            int tiempo = 2;
             int tipo = 1 + (int) (Math.random() * 2);
-            System.out.println("la descarga de tipo  " + tipo + " tarda " + tiempo + " segundos");
+             System.out.println("la descarga de tipo  " + tipo + " tarda " + tiempo + " segundos");
             try {
                 sleep(tiempo*1000);
             } catch (InterruptedException e) {
             }
 
             bodega.descargarArticulo(tipo);
-            System.out.println("se  descarga articulo");
+            
 
         }
     }

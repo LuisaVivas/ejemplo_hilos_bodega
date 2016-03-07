@@ -50,18 +50,20 @@ public class bodega {
         }
         System.out.println(cantidadTipo1);
         System.out.println(cantidadTipo2);
+        System.out.println("------");
 
     }
 
     public void crearPaquete() {
 
-        while (cantidadTipo1 < 3);
-        //while (cantidadTipo1 < 3 || cantidadTipo2 < 4);
+        while (cantidadTipo1 > 3);
+        if (cantidadTipo1 >= 3 && cantidadTipo2 >= 4){
+        
         cantidadTipo1 -= 3;
         cantidadTipo2 -= 4;
-
+        System.out.println("se ha enmpagado aritculo");
         capacidadBodega = capacidadBodega - 3 * volumenTipo1 + 4 * volumenTipo2;
-
+        }
     }
 
 }

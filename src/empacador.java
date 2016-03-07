@@ -24,7 +24,7 @@ public class empacador extends Thread{
         while(true){
             //mesa.atenderPedido();
 
-            int tiempoEntregando = (int) (Math.random()*10);
+            int tiempoEntregando = 2;
             System.out.println("Espera por " + tiempoEntregando + " segundos para armar paquete");
 
             try {
@@ -32,7 +32,7 @@ public class empacador extends Thread{
             } catch (InterruptedException e) {
             }
             bode.crearPaquete();
-            System.out.println("se ha enmpagado aritculo");
+            
 
         }
 
